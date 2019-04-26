@@ -1,0 +1,28 @@
+{
+  "name": "shogun-lazysize",
+  "version": "1.0.0",
+  "description": "Lazy size library for shogun.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "rollup -c rollup.config.js"
+  },
+  "keywords": [
+    "shogun",
+    "javascript",
+    "lazyload"
+  ],
+  "author": "jpuri@getshogun.com",
+  "license": "MIT",
+  "dependencies": {
+    "lazysizes": "^4.1.8"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-commonjs": "^9.3.4",
+    "rollup-plugin-node-resolve": "^4.2.3",
+    "rollup-plugin-sourcemaps": "^0.4.2",
+    "rollup-plugin-uglify": "^6.0.2"
+  }
+}
