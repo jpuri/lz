@@ -1,6 +1,6 @@
 {
   "name": "shogun-lazysize",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Lazy size library for shogun.",
   "main": "dist/index.js",
   "scripts": {
