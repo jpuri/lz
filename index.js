@@ -1,16 +1,6 @@
-import lazySizes from "lazysizes";
-import originalLazySizesConfig from "./store-global-ls-options";
+import restoreLazySizesConfig from './break-lazysizes';
+import lazySizes from 'lazysizes';
 
-Object.assign(lazySizes.cfg, {
-  lazyClass: "shogun-lazyload",
-  loadedClass: "shogun-lazyloaded",
-  loadingClass: "shogun-lazyloading",
-});
-
-lazySizes.init()
-
-if (originalLazySizesConfig) {
-  window.lazySizesConfig = originalLazySizesConfig;
-} else if ("lazySizesConfig" in window) {
-  delete window.lazySizesConfig;
-}
+lazySizes.cfg.lazyClass = 'shogun-lazyload';
+lazySizes.cfg.loadedClass = "shogun-lazyloaded";
+restoreLazySizesConfig();

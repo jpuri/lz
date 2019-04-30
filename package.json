@@ -14,7 +14,7 @@
   "author": "jpuri@getshogun.com",
   "license": "MIT",
   "dependencies": {
-    "lazysizes": "^4.1.8"
+    "lazysizes": "git+ssh://github.com/aFarkas/lazysizes.git#8663071"
   },
   "devDependencies": {
     "@babel/core": "^7.4.3",
